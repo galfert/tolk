@@ -14,7 +14,7 @@
   <body>
     <div id="container">
       <header>
-        <h1><span class="home"><%= link_to "Tolk", tolk_root_path %></span><%= yield :locale %></h1>
+        <h1><span class="home"><%= link_to "Tolk", tolk_root_path %></span><% if @locale.present? %><span class="locale"><%= link_to @locale.language_name, tolk_locale_path(@locale) %></span><% end %></h1>
       </header>
       <%= yield %>
     </div>
