@@ -47,13 +47,8 @@ module Tolk
       'tr'    => 'Turkish',
       'uk'    => 'Ukrainian',
       'vi'    => 'Vietnamese',
-<<<<<<< HEAD
-      'zh-CN' => 'Chinese (Simplified)',
-      'zh-TW' => 'Chinese (Traditional)'
-=======
-      'zh-cn'    => 'Chinese (Simplified)',
-      'zh-tw'    => 'Chinese (Traditional)'
->>>>>>> 4b90732... correct japanese, chinese & portuguese locale codes
+      'zh-cn' => 'Chinese (Simplified)',
+      'zh-tw' => 'Chinese (Traditional)'
     }
 
     has_many :phrases, :through => :translations, :class_name => 'Tolk::Phrase'
