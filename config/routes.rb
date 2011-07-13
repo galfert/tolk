@@ -1,4 +1,4 @@
-Rails.application.routes.draw do |map|
+Tolk::Engine.routes.draw do
   namespace :tolk do
     root :to => 'locales#index'
     resources :locales do
