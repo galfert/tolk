@@ -24,7 +24,7 @@ module Tolk
           phrase = phrases.detect {|p| p.key == key}
 
           if phrase
-            translation = locale.translations.new(:text => value, :phrase => phrase)
+            translation = locale.translations.new(:text => value, :phrase => phrase, :locale_id => locale.id)
             count = count + 1 if translation.save
           else
             puts "[ERROR] Key '#{key}' was found in #{locale_name}.yml but #{Tolk::Locale.primary_language_name} translation is missing"
